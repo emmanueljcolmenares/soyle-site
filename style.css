@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Literata Hero';
+  src: url('Literata-Hero.ttf');
+  font-display: swap;
+}
+:root {
+  --paper: #FBF8F0;
+  --ink: #14201A;
+  --muted: #5F6F64;
+  --rule: #E3DECF;
+  --accent: #2E7256;   /* steppe green */
+  --gold:   #9A7C30;
+}
+* { margin: 0; box-sizing: border-box; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+}
+header { margin-bottom: 44px; }
+.mark {
+  font-family: 'Literata Hero', Georgia, serif;
+  font-size: 46px;
+  line-height: 1.1;
+  text-decoration: none;
+  color: var(--ink);
+  display: inline-block;
+}
+.mark b { color: var(--gold); font-weight: 400; }
+.mark .tick { display: block; width: 46px; height: 3px; background: var(--gold); margin-top: 6px; }
+.meta {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 18px;
+}
+h1 { font-family: 'Literata Hero', Georgia, serif; font-weight: 400; font-size: 30px; margin: 36px 0 6px; }
+h2 { font-size: 13px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin: 36px 0 10px; border-top: 1px solid var(--rule); padding-top: 22px; }
+p, li { color: #2C342E; margin-bottom: 14px; }
+ul { padding-left: 22px; }
+a { color: var(--accent); }
+nav { margin-top: 40px; padding-top: 22px; border-top: 2px solid var(--ink); font-size: 14px; }
+nav a { margin-right: 22px; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+.updated { font-size: 13px; color: var(--muted); margin-bottom: 28px; }
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--muted); }
